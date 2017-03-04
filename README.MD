@@ -32,7 +32,7 @@ myapp.controller('ctrl', function ctrlApp($scope, $http) {
 });
 ```
 
-Di seguito l'esempio che mostra come chiamare una risorsa Rest direttamente attraverso [$http](https://docs.angularjs.org/api/ng/service/$http)
+Di seguito l'esempio che mostra come chiamare una risorsa Rest direttamente attraverso [$http](https://docs.angularjs.org/api/ng/service/$http){:target="_blank"}
 
 ```javascript
 $http({
