@@ -33,7 +33,7 @@ myapp.controller('ctrl', function ctrlApp($scope, $http) {
 ```
 
 Di seguito l'esempio che mostra come chiamare una risorsa Rest direttamente attraverso 
-<a href="https://docs.angularjs.org/api/ng/service/$http" target="_blank">$http</a>
+<a href="https://docs.angularjs.org/api/ng/service/$http" target="_blank">$http</a>.
 
 ```javascript
 $http({
@@ -47,3 +47,7 @@ $http({
     // or server returns response with an error status.
   });
 ```
+
+## Codice completo su GITHUB
+Puoi vedere e scaricare il codice direttamente da GITHUB.
+<a href="https://github.com/lucasalzone/AngularRestClient">Download Source</a>
