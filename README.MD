@@ -1,5 +1,6 @@
 # Utilizzare servizi Rest con Angular
-In questo articolo vedremo come consumare un servizio restful attraverso **AngularJS** 
+In questo articolo vedremo come consumare un servizio restful attraverso **AngularJS**.
+Potete vedere come creare facilmente un servizio REST nel post []() 
 
 ## Costruiamo la pagina
 Iniziamo a definire la nostra pagina, inserendo l' applicazione (_ng-app_), ed il controller (_ng-controller_).
@@ -31,7 +32,7 @@ myapp.controller('ctrl', function ctrlApp($scope, $http) {
 });
 ```
 
-Di seguito l'esempio che mostra come chiamare una risorsa Rest direttamente attraverso $http.
+Di seguito l'esempio che mostra come chiamare una risorsa Rest direttamente attraverso [$http](https://docs.angularjs.org/api/ng/service/$http)
 
 ```javascript
 $http({
@@ -45,4 +46,3 @@ $http({
     // or server returns response with an error status.
   });
 ```
-[Link documentazione ufficiale $http](https://docs.angularjs.org/api/ng/service/$http)
