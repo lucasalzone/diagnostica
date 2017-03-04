@@ -1,0 +1,16 @@
+<html ng-app="app">
+<head>
+<script src="js/angular.min.js"></script>
+<script src="js/app/app.js"></script>
+</head>
+<body ng-controller="ctrl">
+	Select name of user:
+	<input ng-model="name" ng-change="searchUser()">
+	
+	<hr>
+	
+	<h2>DATI</h2>
+	{{utente}}
+	
+</body>
+</html>
