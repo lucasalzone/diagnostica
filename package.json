@@ -1,0 +1,17 @@
+{
+	"name": "angularjs",
+	"version": "0.0.0",
+	"description": "Example project of AngularJS.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo 'Error: no test specified' && exit 1"
+	},
+	"author": "Luca Salzone",
+	"license": "ISC",
+	"dependencies": {
+		"jasmine" : "latest",
+		"karma": "latest",
+		"karma-jasmine": "latest",
+		"karma-chrome-launcher" : "latest"
+	}
+}

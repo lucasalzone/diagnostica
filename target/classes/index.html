@@ -1,19 +1,39 @@
 <html ng-app="app">
 <head>
 <script src="js/angular.min.js"></script>
+<script src="js/angular-resource.js"></script>
 <script src="js/app/app.js"></script>
 </head>
 <body ng-controller="ctrl">
-	Select name of user:
-	<input ng-model="name" ng-change="searchUser()">
-	
+
+	<h2>RUBRICA</h2>
 	<hr>
 	
-	<h2>DATI</h2>
-	<form>
-		<input ng-model="utente.firstName">
-	</form>
-	{{utente}}
+	<div>
+		<form ng-submit="addUser()">
+			<p><input placeholder="name" ng-model="newUser.name" type="text" required></p>
+			<p><input placeholder="surname" ng-model="newUser.surname" type="text" required></p>
+			<p><input placeholder="age" ng-model="newUser.age" type="number" min="18" max="90"></p>
+			<p><input placeholder="address" ng-model="newUser.address" type="text"></p>
+			<p><input placeholder="telephone" ng-model="newUser.tel" type="tel"></p>
+			<input type="submit">
+		</form>
+	</div>
 	
+	<div >
+		Seleziona un contatto: 
+		<select ng-model="selectName" ng-change="searchUser()">
+			<option ng-repeat="utente in users" value="{{utente.name}}">{{utente.name}} - {{utente.surname}}</option>
+		</select>
+	</div>
+	<div ng-show="user">
+		<h3>Dettaglio Contatto</h3>
+		<p>firstname: {{user.name}}</p>
+		<p>lastname: {{user.surname}}</p>
+		<p>age: {{user.age}}</p>
+		<p>address: {{user.address}}</p>
+		<button ng-click="updateUser(user)">Update</button>
+		<button ng-click="deleteUser(user)">Delete</button>
+	</div>
 </body>
 </html>
