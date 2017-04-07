@@ -1,0 +1,27 @@
+
+
+  <div class="col-sm-4 col-md-2">
+    <div class="thumbnail ">
+      <div class="caption">
+        <i ng-if="component.subtype=='light'" class="fa fa-lightbulb-o fa-lg"></i>
+        <i ng-if="component.subtype=='temperature'" i class="fa fa-thermometer-quarter fa-lg"></i>
+        <i ng-if="component.subtype=='contact'" i class="fa fa-lock fa-lg"></i>
+        <i ng-if="component.subtype=='alarm'" i class="fa fa-warning fa-lg"></i>
+
+        <i ng-if="message == undefined" class="fa fa-rss fa-lg pull-right" style="color:#ffe6cc"></i>
+        <i ng-if="message != undefined" class="fa fa-rss fa-lg pull-right" style="color:green" ></i>
+
+        <i ng-if="component.power==undefined" style="color:#ffe6cc;" class="pull-right fa fa-battery-0 fa-lg"></i>
+        <i ng-if="component.power=='hight'" style="color:green;" class="pull-right fa fa-battery-4 fa-lg"></i>
+        <i ng-if="component.power=='medium'" style="color:orange;" class="pull-right fa fa-battery-2 fa-lg"></i>
+        <i ng-if="component.power=='low'" style="color:#800000;" class="pull-right fa fa-battery-1 fa-lg"></i>
+
+        <h3>
+           {{component.name | uppercase}}
+        </h3>
+        <p>ID: {{component.id}}</p>
+        <p>TYPE: {{component.type}} / {{component.subtype}}</p>
+        <p>LAST CHECK:{{lastCheck(component.id).sendTime}}</p>
+      </div>
+    </div>
+  </div>

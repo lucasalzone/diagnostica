@@ -1,0 +1,8 @@
+<div ng-repeat="component in components">
+    <h1>{{component.name}}</h1>
+    <p>ID:{{component.id}}</p>
+    <p>TYPE:{{component.type}}</p>
+    <p>LAST CHECK:{{lastCheck(component.id).sendTime}}</p>
+    <p ng-if="componentStatus(component.id)=='ko'"> Verify </p>
+    <p ng-if="componentStatus(component.id)=='ok'"> Success </p>
+</div>
