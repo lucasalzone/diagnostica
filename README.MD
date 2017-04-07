@@ -63,3 +63,4 @@ _COMPONENT_: componente IoT hardware (sensore / attuatore) connesso con la centr
 _CENTRALINA_: sistema di controllo dei vari sensori / attuatori IoT
 
 _SISTEMA DISTRIBUITO_: componente esterno al sistema IoT, che interagisce con esso per esporre i dati rilevati e pilotare eventuali attuatori.
+ 
