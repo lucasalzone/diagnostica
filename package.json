@@ -1,17 +1,20 @@
 {
-	"name": "angularjs",
-	"version": "0.0.0",
-	"description": "Example project of AngularJS.",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo 'Error: no test specified' && exit 1"
-	},
-	"author": "Luca Salzone",
-	"license": "ISC",
-	"dependencies": {
-		"jasmine" : "latest",
-		"karma": "latest",
-		"karma-jasmine": "latest",
-		"karma-chrome-launcher" : "latest"
-	}
+  "name": "diagnostica",
+  "version": "1.0.0",
+  "description": "Example project with angular + grunt.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "author": "Luca Salzone",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://lucasalzone@bitbucket.org/lucasalzone/diagnostica.git"
+  },
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/lucasalzone/diagnostica#readme"
 }
