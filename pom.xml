@@ -5,11 +5,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <name>diagnostic</name>
-  <description>diagnosti system</description>
-  <parent>
-  	<groupId>it.salz</groupId>
-	<artifactId>restful</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<relativePath>../restful/pom.xml</relativePath>
-  </parent>
+  <description>diagnostic system</description>
+  
 </project>
