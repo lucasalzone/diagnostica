@@ -41,8 +41,9 @@ var server = http.createServer(function(request, response) {
 ```
 
 ## npm
-Npm is a package manager for javascript.
+**npm** is a package manager for javascript.
 When install Node.js, the system install also **npm** tools, that enabled node to install and run plugin.
+
 To install new plugin we can use
 
 - npm **-i** plugin-name: install plugin (-g option install globally, save / save-dev / save-optional install as dependencies)
@@ -52,35 +53,24 @@ To install new plugin we can use
 
 
 ## Gulp
+Gulp is a task executor for automate build operation.
+
 ### install globally
-npm install --global gulp-cli
+
+> npm install --global gulp-cli
 
 ### install on project
-npm install --save-dev gulp
+
+> npm install --save-dev gulp
 
 ### create gulp.js
+
+```javascript
 var gulp = require('gulp');
 
 gulp.task('default', function() {
   // place code for your default task here
 });
-
-## Grunt
-Grunt is a task runner.
-With grunt we can execute task for compilation, minify, test, and more.
-
-### Installation
-From terminal:
-
-> npm install -g grunt-cli
-> npm install -g grunt-init
-> (on project) npm i grunt --save-dev
-
-### package.json 
-To work with grunt, we must before configure it on project.
-To create a defualt package.json with grunt write:
-
-> grunt-init
-
+```
 
   
